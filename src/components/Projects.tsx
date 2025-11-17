@@ -46,7 +46,7 @@ export default function Projects() {
         <h3 className="text-4xl font-bold text-black mb-12">Featured Projects</h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white border border-blue-200 rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+            <div key={index} className="bg-white border border-blue-200 rounded-lg transition-shadow overflow-hidden" style={{ boxShadow: '0 4px 6px rgba(30, 58, 138, 0.1)', '--tw-shadow-colored': '0 10px 15px rgba(30, 58, 138, 0.15)' } as React.CSSProperties} onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 10px 15px rgba(30, 58, 138, 0.15)'} onMouseLeave={(e) => e.currentTarget.style.boxShadow = '0 4px 6px rgba(30, 58, 138, 0.1)'}>
               <div className="bg-gradient-to-r from-blue-500 to-blue-600 h-2"></div>
               <div className="p-6">
                 <h4 className="text-xl font-bold text-black mb-2">{project.name}</h4>
