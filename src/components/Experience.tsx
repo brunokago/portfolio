@@ -43,7 +43,7 @@ export default function Experience() {
         <h3 className="text-4xl font-bold text-black mb-12">Experience</h3>
         <div className="space-y-8">
           {experiences.map((exp, index) => (
-            <div key={index} className="bg-white p-8 rounded-lg shadow-md border-l-4 border-blue-600">
+            <div key={index} className="bg-white p-8 rounded-lg shadow-lg border-l-4 border-blue-950" style={{ boxShadow: '0 10px 25px rgba(30, 58, 138, 0.15)' }}>
               <div className="flex justify-between items-start mb-4">
                 <div>
                   <h4 className="text-2xl font-bold text-black">{exp.role}</h4>
