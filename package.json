@@ -2,11 +2,14 @@
   "name": "developer-landing-react",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://brunokago.github.io/portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "autoprefixer": "^10.0.0",

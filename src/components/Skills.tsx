@@ -16,11 +16,11 @@ export default function Skills() {
         <h3 className="text-4xl font-bold text-black mb-12">Technical Skills</h3>
         <div className="grid md:grid-cols-3 gap-8">
           {Object.entries(skills).map(([category, items]) => (
-            <div key={category} className="bg-blue-50 p-6 rounded-lg">
-              <h4 className="text-xl font-bold text-black mb-4">{category}</h4>
+            <div key={category} className="bg-blue-950 text-white p-6 rounded-xl shadow-md">
+              <h4 className="text-xl font-bold text-white mb-4">{category}</h4>
               <div className="flex flex-wrap gap-2">
                 {items.map((skill) => (
-                  <span key={skill} className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
+                  <span key={skill} className="bg-gray-200 text-blue-950 px-3 py-1 rounded-full text-sm">
                     {skill}
                   </span>
                 ))}

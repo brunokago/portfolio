@@ -21,17 +21,17 @@ export default function Contact() {
             <h4 className="text-2xl font-bold text-black mb-6">Contact Information</h4>
             <div className="space-y-6">
               <div>
-                <p className="text-gray-600 font-semibold">Phone</p>
-                <a href="tel:+254721379361" className="text-blue-600 text-lg hover:underline">+254721379361</a>
+                <p className="text-black font-semibold">Phone</p>
+                <a href="tel:+254721379361" className="text-black text-lg hover:underline">+254721379361</a>
               </div>
               <div>
-                <p className="text-gray-600 font-semibold">Email</p>
-                <a href="mailto:brunokago@gmail.com" className="text-blue-600 text-lg hover:underline">brunokago@gmail.com</a>
+                <p className="text-black font-semibold">Email</p>
+                <a href="mailto:brunokago@gmail.com" className="text-black text-lg hover:underline">brunokago@gmail.com</a>
               </div>
               <div>
-                <p className="text-gray-600 font-semibold">Social Links</p>
+                <p className="text-black font-semibold">Social Links</p>
                 <div className="flex gap-4 mt-2">
-                  <a href="https://github.com/brunokago" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 font-bold">GitHub</a>
+                  <a href="https://github.com/brunokago" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-700 font-bold">GitHub</a>
                 </div>
               </div>
             </div>
@@ -49,7 +49,7 @@ export default function Contact() {
               <label className="block text-gray-700 font-bold mb-2">Message</label>
               <textarea name="message" value={formData.message} onChange={handleChange} required rows={5} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"></textarea>
             </div>
-            <button type="submit" className="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700">
+            <button type="submit" className="w-full bg-blue-950 text-white font-bold py-3 rounded-lg hover:bg-blue-900">
               Send Message
             </button>
           </form>

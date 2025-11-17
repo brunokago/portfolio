@@ -6,38 +6,38 @@ export default function Projects() {
       name: 'Offline Phone Finder',
       description: 'Application to track phones via SMS and control volume settings',
       link: 'https://github.com/brunokago/offlinephonefinder',
-      tech: ['Android', 'Java'],
+      tech: ['Android', 'Java']
     },
     {
       name: 'Resume Generator',
       description: 'Web application for generating professional resumes',
       link: 'https://github.com/brunokago/Resume-generator',
-      tech: ['React', 'JavaScript'],
+      tech: ['React', 'JavaScript']
     },
     {
       name: 'Movie Recommendation',
       description: 'Machine learning project recommending movies based on user interests',
       link: 'https://github.com/brunokago/Movie',
-      tech: ['Python', 'Machine Learning'],
+      tech: ['Python', 'Machine Learning']
     },
     {
       name: 'Employee Management System',
       description: 'Full-stack system for managing employee data and operations',
       link: 'https://github.com/brunokago/Employee-management-sytem.git',
-      tech: ['React', 'Spring Boot', 'MySQL'],
+      tech: ['React', 'Spring Boot', 'MySQL']
     },
     {
       name: 'Chuck Norris Jokes API',
       description: 'Simple project fetching and displaying Chuck Norris jokes from API',
       link: 'https://github.com/brunokago/Chuck-Norris-Api',
-      tech: ['JavaScript', 'API'],
+      tech: ['JavaScript', 'API']
     },
     {
       name: 'Java CRUD with MySQL',
       description: 'Simple CRUD operations project using Java and MySQL',
       link: 'https://github.com/brunokago/Simple-project-java-mysql',
-      tech: ['Java', 'MySQL'],
-    },
+      tech: ['Java', 'MySQL']
+    }
   ];
 
   return (
@@ -53,12 +53,12 @@ export default function Projects() {
                 <p className="text-gray-700 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech) => (
-                    <span key={tech} className="bg-blue-100 text-blue-600 px-2 py-1 rounded text-xs font-semibold">
+                    <span key={tech} className="bg-blue-950 text-white px-2 py-1 rounded text-xs font-semibold">
                       {tech}
                     </span>
                   ))}
                 </div>
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 font-bold hover:text-blue-800">
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-black font-bold hover:text-gray-700">
                   View on GitHub →
                 </a>
               </div>
